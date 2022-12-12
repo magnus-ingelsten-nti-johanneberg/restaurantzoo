@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: rgb(90, 61, 61);
+}
+
+#anstallda_gridwrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px 50px 100px max-content max-content 250px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "he he he"
+    "na na na"
+    "ti ti ti"
+    "sp sp sp"
+    "sp sp sp"
+    "fo fo fo"
+    ;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#index_gridwrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px 50px 100px max-content max-content 250px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "he he he"
+    "na na na"
+    "ti ti ti"
+    "sl sl sr"
+    "sl sl sr"
+    "fo fo fo"
+    ;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#page_title {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    grid-area: ti;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(102, 69, 69);
+
+}
+
+#page_nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    grid-area: na;
+    background-color: rgb(114, 77, 77);
+    justify-content:space-around;
+    align-items: center;
+}
+
+#page_header {
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    grid-area: he;
+    background-color: rgb(66, 45, 45);
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    size: 4rem;
+}
+
+#page_footer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    grid-area: fo;
+    background-color: rgb(90, 61, 61);
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#section_personal {
+    width: 100%;
+    height: 100%;
+    grid-area: sp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(90, 61, 61);
+}
+
+#section_index_left {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    grid-area: sl;
+}
+
+#section_index_right {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    grid-area: sr;
+}
+
+#img_personal {
+    border-radius: 20px;
+}
+
+.card_personal {
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    margin: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card_personal:hover {
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.3);
+}
+
+#card_container {
+    position: relative;
+    text-align: center;  
+}
+
+#card_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+#text_container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+#card_elephant {
+    background-color: linear-gradient(45, rgba(255, 255, 255), rgba(100, 255, 0));
+}
+
+#card_1 {
+    background-image: url("/img/img_elephant.png");
+}
+#card_2 {
+    background-image: url("/img/img_giraffe.png");
+}
+#card_3 {
+    background-image: url("/img/img_monkey.png");
+}
+#card_4 {
+    background-image: url("/img/img_penguin.png");
+}
+#card_5 {
+    background-image: url("/img/img_polarbear.png");
+}
+#card_6 {
+    background-image: url("/img/img_rhino.png");
+}
